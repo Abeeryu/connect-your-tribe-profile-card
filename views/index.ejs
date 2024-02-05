@@ -1,7 +1,6 @@
 <%- include('./partials/head') %>
 
 <article>
-  <header>
     <div class="maincontainer">
 
       <div class="thecard">
@@ -10,16 +9,13 @@
   
       <div class="theback"></div>
       <div class="theback">
-          <h1>ABEER YOUNES</h1>
+          <h1><%= data.name %> <%= data.surname %></h1>
           <p><span class="green">Mediavormgever en Web Developer</span><br><br><br><br> Ik kom uit Syrie. Ik ben 27 jaar oud en ik woon in Nederland al 7 jaar
           <br><br><br><br>Werkervaring: Photoshop, InDesign, Illustrator, Animate, Blender, XD en Premiere Pro</p>
         </div>
 
         <div class="thefront"></div>
 
-  <p><%= data.name %></p>
-
-  <footer></footer>
 </article>
 
 <%- include('./partials/foot') %>
