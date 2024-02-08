@@ -51,7 +51,7 @@ footer {
   background: red;
 } */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -59,7 +59,6 @@ footer {
 
 }
 
-/* main box */
 .maincontainer{
   position: absolute;
   width: 250px;
@@ -69,7 +68,7 @@ footer {
   margin-top: 8%;
   
 }  
-/* Box */
+
 .thecard{
   position: absolute;
   width: 100%;
@@ -86,7 +85,6 @@ footer {
   transform: rotateY(180deg);
 }
 
-/* the front of my card typografie en size */
 .thefront{
   position: absolute;
   width: 100%;
@@ -109,7 +107,6 @@ footer {
   padding-bottom: 1rem;
 }
 
-/* the back of my card typografie en size */
 .theback{
   position: absolute;
   width: 100%;
@@ -131,7 +128,6 @@ footer {
   padding-bottom: 1rem;
 }
 
-/* heading 1 features */
 h1{
   color: #345e30;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -144,7 +140,6 @@ h1{
 
 }
 
-/* paragraph features */
 p{
   color: #403c3c;
   position: center;
@@ -156,4 +151,5 @@ p{
 
 .green{
   color: #85b481;
-}
+} */
+
