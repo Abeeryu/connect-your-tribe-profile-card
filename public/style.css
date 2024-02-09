@@ -153,3 +153,127 @@ p{
   color: #85b481;
 } */
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primarycolor: rgb(15, 161, 130);
+  --background-color: black;
+  --line-color: yellow;
+  --shadow-color-container: rgba(0, 0, 0, 0.15);
+  --shadow-color-img: rgba(0, 0, 0, 0.2);
+  --main-font: "Montserrat", sans-serif;
+  --large-text: 1.4em;
+  --body-text: 1em;
+  --button-font: 1.7em;
+  --button-color: white;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 14px;
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: var(--primarycolor);
+  width: 220px;
+  height: 220px;
+  padding: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 60px var(--shadow-color-container);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: width 0.4s, height 0.4s, border-radius 0.4s;
+}
+
+.container:hover {
+  width: 340px;
+  height: 440px;
+  border-radius: 4px;
+}
+
+.img-container {
+  width: 170px;
+  height: 170px;
+  min-height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 40px 5px var(--shadow-color-img);
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.my-name {
+  font-size: var(--large-text);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.study,
+.info {
+  font-size: var(--body-text);
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.study {
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.social-media-container {
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-container button {
+  border: none;
+  outline: none;
+  color: var(--button-color);
+  background: none;
+  width: 20px;
+  height: 40px;
+  font-size: var(--button-font);
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.container:hover .social-media-container button {
+  transform: translatex(60px);
+  transition-delay: 0.3s;
+}
+
+.container:hover .social-media-container button:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+
+
